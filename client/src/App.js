@@ -5,8 +5,6 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 //bootstrap css
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
-//fontawesome css
-import "./assets/fa5/css/fontawesome.min.css";
 // antd css
 import "antd/dist/antd.css";
 //custom components
@@ -45,32 +43,35 @@ import ScrollToTop from "./util/ScrollToTop.js";
 import AdminPanel from "./Pages/AdminPanel/AdminPanel.component";
 
 const HomePage = lazy(() =>
-  fakeDelay(1000)(import("./Pages/HomePage/HomePage.component"))
+  fakeDelay(500)(import("./Pages/HomePage/HomePage.component"))
 );
 const AboutPage = lazy(() =>
-  fakeDelay(1000)(import("./Pages/AboutPage/AboutPage.component"))
+  fakeDelay(500)(import("./Pages/AboutPage/AboutPage.component"))
 );
 const HistoryPage = lazy(() =>
-  fakeDelay(1000)(import("./Pages/HistoryPage/HistoryPage.component"))
+  fakeDelay(500)(import("./Pages/HistoryPage/HistoryPage.component"))
 );
 const CategoriesPage = lazy(() =>
-  fakeDelay(1000)(import("./Pages/CategoriesPage/CategoriesPage.component"))
+  fakeDelay(500)(import("./Pages/CategoriesPage/CategoriesPage.component"))
 );
 const CategoriesProductsPage = lazy(() =>
-  fakeDelay(1000)(
+  fakeDelay(500)(
     import("./Pages/CategoriesProductsPage/CategoriesProductsPage.component")
   )
 );
 const ProductPage = lazy(() =>
-  fakeDelay(1000)(import("./Pages/ProductPage/ProductPage.component"))
+  fakeDelay(500)(import("./Pages/ProductPage/ProductPage.component"))
 );
 const LoginPage = lazy(() =>
-  fakeDelay(1000)(import("./Pages/LoginPage/LoginPage.component"))
+  fakeDelay(500)(import("./Pages/LoginPage/LoginPage.component"))
 );
 const DistributionshipPage = lazy(() =>
-  fakeDelay(1000)(
+  fakeDelay(500)(
     import("./Pages/DistributionshipPage/DistributionshipPage.component")
   )
+);
+const ContactPage = lazy(() =>
+  fakeDelay(500)(import("./Pages/ContactPage/ContactPage.component"))
 );
 // add some async delay for illustration purposes
 function fakeDelay(ms) {
@@ -138,6 +139,7 @@ class App extends React.Component {
                   path="/distributionship"
                   component={DistributionshipPage}
                 />
+                <Route exact path="/contact" component={ContactPage} />
                 <PrivateRoute path="/admin" component={AdminPanel} />
               </Switch>
             </Suspense>

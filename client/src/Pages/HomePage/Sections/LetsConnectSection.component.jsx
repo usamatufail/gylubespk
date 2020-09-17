@@ -2,6 +2,7 @@ import React from "react";
 import "./LetsConnectSection.styles.scss";
 
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 const LetsConnectSection = () => {
   return (
@@ -30,12 +31,9 @@ const LetsConnectSection = () => {
                   in touch with us to learn more about the quality and the
                   opportunities you’ll gain from working with the Goodyear name.{" "}
                 </p>
-                <a
-                  href="https://www.goodyearlubricants.in/contact"
-                  class="warranty-btn mt-1"
-                >
+                <Link to="/contact" class="warranty-btn mt-1">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </Fade>
