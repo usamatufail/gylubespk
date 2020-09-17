@@ -1,0 +1,75 @@
+.category-products-page__container {
+  padding: 60px 0px;
+  background: #f4f4f4;
+}
+
+.para {
+  padding: 5px;
+  color: #212529;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.filters .filter:last-child {
+  margin-bottom: 0px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.filter .filter-header {
+  background-color: #0048a2;
+  padding: 10px 20px 5px;
+  h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.filter .filter-body {
+  padding: 15px 12px;
+  border: 0;
+  background: #fff;
+}
+
+.filter.category ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.filter.category ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.oil-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+// .filter.category ul li::before {
+//   position: absolute;
+//   content: "\f101";
+//   font-family: "Font Awesome 5 Free";
+//   font-weight: 600;
+//   color: #fbd900;
+//   left: 0px;
+//   top: -1px;
+// }
+
+.filter.category ul li a {
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.filter.category ul li a:hover {
+  color: #fbd900;
+}

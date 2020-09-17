@@ -1,0 +1,25 @@
+{
+  "short_name": "GY Lubes PK",
+  "name": "Good Year Lubricants Pakistan",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/maxxispk/image/upload/v1600369404/icons/cropped-Goodyear_WingedFoot_Icon_Favicon_512x512-32x32_rw2des.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://res.cloudinary.com/maxxispk/image/upload/v1600369498/icons/cropped-Goodyear_WingedFoot_Icon_Favicon_512x512-192x192_ieckz3.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://res.cloudinary.com/maxxispk/image/upload/v1600369516/icons/cropped-Goodyear_WingedFoot_Icon_Favicon_512x512-270x270_ktvagg.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fff200",
+  "background_color": "#001789"
+}

@@ -1,0 +1,14 @@
+.login-page__container {
+  height: 70vh;
+  background-color: #efefef;
+  .login,
+  .image {
+    min-height: 70vh;
+  }
+
+  .bg-image {
+    background-image: url("https://res.cloudinary.com/maxxispk/image/upload/v1599773534/adp-gallery5eb57414eedec_o5p6lc.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+}

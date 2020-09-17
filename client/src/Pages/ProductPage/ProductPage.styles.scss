@@ -1,0 +1,17 @@
+.product-page__container {
+  padding: 120px 0px;
+  background: #e0e1e2;
+  .content {
+    .title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #333333;
+    }
+    .description {
+      p {
+        margin: 15px 0px 25px;
+      }
+    }
+  }
+}
