@@ -3,6 +3,7 @@ import React from "react";
 // import { Fade } from "react-reveal";
 //React-Typist for Typing Effect
 import Typist from "react-typist";
+import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 //React Slick Library Elements
 import Slider from "react-slick";
@@ -81,45 +82,17 @@ class CarouselComponent extends React.Component {
                   {listOfCategories.length !== 0 ? (
                     <Flip right cascade>
                       <div className="carousel-slide__content">
-                        <span className="typing-header">
-                          We may serve you with
+                        <span className="typing-header">We deal in</span>
+                        {/* <Typist> */}
+                        <span>
+                          <TypistLoop interval={200}>
+                            {listOfCategories.map((text) => (
+                              <Typist key={text} startDelay={200}>
+                                <h3 className="category-header">{text}</h3>
+                              </Typist>
+                            ))}
+                          </TypistLoop>
                         </span>
-                        <Typist>
-                          <span>
-                            {listOfCategories.map((category) => {
-                              return (
-                                <span>
-                                  <h3 className="category-header">
-                                    {category}
-                                  </h3>
-                                  <Typist.Delay ms={2000} />
-                                  <Typist.Backspace count={category.length} />
-                                </span>
-                              );
-                            })}
-                            <h3 className="category-header">
-                              ALL KIND OF LUBRICANTS.
-                            </h3>
-                          </span>
-                        </Typist>
-                        {/* <Typing cursorClassName="cursor-animated">
-                          <span>
-                            {listOfCategories.map((category) => {
-                              return (
-                                <span>
-                                  <h3 className="category-header">
-                                    {category}
-                                  </h3>
-                                  <Typing.Delay ms={2000} />
-                                  <Typing.Backspace count={category.length} />
-                                </span>
-                              );
-                            })}
-                            <h3 className="category-header">
-                              ALL KIND OF LUBRICANTS.
-                            </h3>
-                          </span>
-                        </Typing> */}
                       </div>
                     </Flip>
                   ) : null}

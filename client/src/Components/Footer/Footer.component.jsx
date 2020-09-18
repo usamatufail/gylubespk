@@ -34,7 +34,7 @@ const Footer = (props) => {
                       </p>
                     </div>
                     <div className="col-12">
-                      <p>Phone: +92-311-7700158</p>
+                      <p>Phone: +92-302-9784681</p>
                     </div>
                   </div>
                 </div>

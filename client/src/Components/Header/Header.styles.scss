@@ -82,7 +82,9 @@
   padding: 0;
 }
 .navbar-brand img {
-  height: 68px;
+  @media only screen and (max-width: 767px) {
+  }
+  height: 50px;
   width: auto;
   display: block;
   -webkit-transition: all 0.3s ease-out;

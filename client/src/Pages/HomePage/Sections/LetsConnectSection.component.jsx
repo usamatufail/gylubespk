@@ -9,19 +9,19 @@ const LetsConnectSection = () => {
     <section>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-6 pd-0">
-            <Fade left>
+          <Fade left>
+            <div className="col-sm-6 pd-0">
               <div class="img-good">
                 <img
                   alt="contact-card"
                   // class="lazy loaded"
                   width="100%"
                   // data-ll-status="loaded"
-                  src="https://www.goodyearlubricants.in/frontend/assets/img/imggg.jpg"
+                  src="https://res.cloudinary.com/maxxispk/image/upload/v1600414347/imggg_nmny74.jpg"
                 />
               </div>
-            </Fade>
-          </div>
+            </div>
+          </Fade>
           <Fade right>
             <div className="col-sm-6 black-yellow">
               <div class="text-cont">

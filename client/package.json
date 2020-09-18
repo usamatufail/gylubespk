@@ -30,6 +30,7 @@
     "react-slick": "^0.27.11",
     "react-transition-group": "^4.4.1",
     "react-typist": "^2.0.5",
+    "react-typist-loop": "^0.0.5",
     "react-vertical-timeline-component": "^3.0.2",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
